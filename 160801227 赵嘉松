@@ -1,0 +1,70 @@
+Exercise1
++cd /home
+ +jiasong@jiasong-OMEN-by-HP-Laptop:/home$ mkdir workbench
+ +mkdir: 无法创建目录"workbench": 权限不够
+ +jiasong@jiasong-OMEN-by-HP-Laptop:/home$ su
+ +密码： 
+ +root@jiasong-OMEN-by-HP-Laptop:/home# mkdir workbench
+ +root@jiasong-OMEN-by-HP-Laptop:/home# touch /workbench/readme.txt
+ +touch: 无法创建'/workbench/readme.txt': 没有那个文件或目录
+ +root@jiasong-OMEN-by-HP-Laptop:/home# su jiasong
+ +root@jiasong-OMEN-by-HP-Laptop:/home# ls
+ +jiasong  lost+found  workbench
+ +root@jiasong-OMEN-by-HP-Laptop:/home# cd
+ +root@jiasong-OMEN-by-HP-Laptop:~# cd /home/workbench
+ +root@jiasong-OMEN-by-HP-Laptop:/home/workbench# ls
+ +root@jiasong-OMEN-by-HP-Laptop:/home/workbench# cd ..
+ +root@jiasong-OMEN-by-HP-Laptop:/home# touch -p /workbench/readme.txt
+ +touch: 不适用的选项 -- p
+ +Try 'touch --help' for more information.
+ +root@jiasong-OMEN-by-HP-Laptop:/home# cd workbench
+ +root@jiasong-OMEN-by-HP-Laptop:/home/workbench# touch readme.txt
+ +root@jiasong-OMEN-by-HP-Laptop:/home/workbench# ls
+ +readme.txt
+ +root@jiasong-OMEN-by-HP-Laptop:/home/workbench# vi readme.txt
+ +root@jiasong-OMEN-by-HP-Laptop:/home/workbench# cat readme.txt
+ +1
+ +2
+ +3
+ +root@jiasong-OMEN-by-HP-Laptop:/home/workbench# ls /home>list.txt
+ +root@jiasong-OMEN-by-HP-Laptop:/home/workbench# cat list.txt
+ +jiasong
+ +lost+found
+ +workbench
+ +root@jiasong-OMEN-by-HP-Laptop:/home/workbench# wc -m list.txt
+ +29 list.txt
+ +root@jiasong-OMEN-by-HP-Laptop:/home/workbench#
+
+Exercise2
++root@jiasong-OMEN-by-HP-Laptop:/home/workbench# cd /home
+ +root@jiasong-OMEN-by-HP-Laptop:/home# touch message.txt
+ +root@jiasong-OMEN-by-HP-Laptop:/home# mv message.txt /tmp
+ +root@jiasong-OMEN-by-HP-Laptop:/home# cd /tmp
+ +root@jiasong-OMEN-by-HP-Laptop:/tmp# ls
+ +config-err-slFhtW
+ +lu34856v9y3c.tmp
+ +message.txt
+ +OSL_PIPE_1000_SingleOfficeIPC_8a12d4d427eac3a0ec86a315f4966777
+ +ssh-1VDSWWtoh2mJ
+ +systemd-private-e94d8ed760fe4f03a2096eb71078b692-bolt.service-gdVcDZ
+ +systemd-private-e94d8ed760fe4f03a2096eb71078b692-colord.service-ks3Ecs
+ +systemd-private-e94d8ed760fe4f03a2096eb71078b692-fwupd.service-wH1Vla
+ +systemd-private-e94d8ed760fe4f03a2096eb71078b692-iio-sensor-proxy.service-wQ2I8S
+ +systemd-private-e94d8ed760fe4f03a2096eb71078b692-rtkit-daemon.service-Ytxsfs
+ +systemd-private-e94d8ed760fe4f03a2096eb71078b692-systemd-resolved.service-MLRfD7
+ +systemd-private-e94d8ed760fe4f03a2096eb71078b692-systemd-timesyncd.service-GVIjed
+ +Temp-6fcdeb54-62ee-4303-a6c8-5cc9b62502f0
+ +tmpaddon
+ +root@jiasong-OMEN-by-HP-Laptop:/tmp# cp message.txt /home
+ +root@jiasong-OMEN-by-HP-Laptop:/tmp# cd /home
+ +root@jiasong-OMEN-by-HP-Laptop:/home# ls
+ +jiasong  lost+found  message.txt  workbench
+ +root@jiasong-OMEN-by-HP-Laptop:/home# find / -name "message.txt"
+ +find: ‘/run/user/1000/gvfs’: 权限不够
+ +/home/message.txt
+ +/tmp/message.txt
+ +root@jiasong-OMEN-by-HP-Laptop:/home# find / -name "message.txt" -delete
+ +find: ‘/run/user/1000/gvfs’: 权限不够
+ +root@jiasong-OMEN-by-HP-Laptop:/home# find / -name "message.txt"
+ +find: ‘/run/user/1000/gvfs’: 权限不够
+ +root@jiasong-OMEN-by-HP-Laptop:/home#
