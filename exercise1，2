@@ -2,27 +2,25 @@ zjj@zjj-Inspiron-5557:~$ cd ..
 zjj@zjj-Inspiron-5557:/home$ sudo mkdir workbench
 [sudo] zjj 的密码： 
 zjj@zjj-Inspiron-5557:/home$ sudo touch /home/workbench/readme.txt
-zjj@zjj-Inspiron-5557:/workbench$ sudo echo "1
+zjj@zjj-Inspiron-5557:/home/workbench$ sudo echo "1
  +> 2
  +> 3">>readme.txt
-zjj@zjj-Inspiron-5557:/workbench$ cat readme.txt
+zjj@zjj-Inspiron-5557:/home/workbench$ cat readme.txt
 1
 2
 3
-zjj@zjj-Inspiron-5557:/home$ sudo touch list.txt
+zjj@zjj-Inspiron-5557:/home$ cd workbench
+zjj@zjj-Inspiron-5557:/home/workbench$ sudo touch list.txt
 zjj@zjj-Inspiron-5557:/home$ su
 密码： 
-root@zjj-Inspiron-5557:/home# ls >list.txt
-root@zjj-Inspiron-5557:/home# cat list.txt
+root@zjj-Inspiron-5557:/home/workbench# ls >list.txt
+root@zjj-Inspiron-5557:/home/workbench# cat list.txt
 list.txt
-lost+found
 readme.txt
-workbench
-zjj
-root@zjj-Inspiron-5557:/home# ls
-list.txt  lost+found  readme.txt  workbench  zjj
-root@zjj-Inspiron-5557:/home# wc -m list.txt
-45 list.txt
+root@zjj-Inspiron-5557:/home/workbench# ls
+list.txt  readme.txt 
+root@zjj-Inspiron-5557:/home/workbench# wc -m list.txt
+20 list.txt
 root@zjj-Inspiron-5557:/home# touch message.txt
 root@zjj-Inspiron-5557:/home# mv message.txt /tmp
 root@zjj-Inspiron-5557:/home# cd /tmp
