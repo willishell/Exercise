@@ -1,0 +1,89 @@
+练习一
+root@zjj-Inspiron-5557:/home# touch message.txt
+root@zjj-Inspiron-5557:/home# mv message.txt /tmp        
+root@zjj-Inspiron-5557:/home# cd /tmp
+root@zjj-Inspiron-5557:/tmp# ls                                                    
+message.txt
+root@zjj-Inspiron-5557:/tmp# cp message.txt /home               
+root@zjj-Inspiron-5557:/tmp# cd /home
+root@zjj-Inspiron-5557:/home# ls
+list.txt  lost+found  message.txt  readme.txt  workbench  zjj
+root@zjj-Inspiron-5557:/home# find / -name "message.txt"
+/home/message.txt
+/tmp/message.txt
+root@zjj-Inspiron-5557:/home# find / -name "message.txt" -delete
+root@zjj-Inspiron-5557:/home# find / -name "message.txt"
+
+练习二
+zjj@zjj-Inspiron-5557:~$ cd ..
+zjj@zjj-Inspiron-5557:/home$ sudo mkdir workbench
+[sudo] zjj 的密码： 
+zjj@zjj-Inspiron-5557:/home$ sudo touch /home/workbench/readme.txt
+zjj@zjj-Inspiron-5557:/home/workbench$ sudo echo "1
+ +> 2
+ +> 3">>readme.txt
+zjj@zjj-Inspiron-5557:/home/workbench$ cat readme.txt
+1
+2
+3
+zjj@zjj-Inspiron-5557:/home$ cd workbench
+zjj@zjj-Inspiron-5557:/home/workbench$ sudo touch list.txt
+zjj@zjj-Inspiron-5557:/home$ su
+密码： 
+root@zjj-Inspiron-5557:/home/workbench# ls >list.txt
+root@zjj-Inspiron-5557:/home/workbench# cat list.txt
+list.txt
+readme.txt
+root@zjj-Inspiron-5557:/home/workbench# ls
+list.txt  readme.txt 
+root@zjj-Inspiron-5557:/home/workbench# wc -m list.txt
+20 list.txt
+root@zjj-Inspiron-5557:/home# touch message.txt
+root@zjj-Inspiron-5557:/home# mv message.txt /tmp
+root@zjj-Inspiron-5557:/home# cd /tmp
+root@zjj-Inspiron-5557:/tmp# ls                                                     
+message.txt
+root@zjj-Inspiron-5557:/tmp# cp message.txt /home
+root@zjj-Inspiron-5557:/tmp# cd /home
+root@zjj-Inspiron-5557:/home# ls
+list.txt  lost+found  message.txt  readme.txt  workbench  zjj
+root@zjj-Inspiron-5557:/home# find / -name "message.txt"
+/home/message.txt
+/tmp/message.txt
+root@zjj-Inspiron-5557:/home# find / -name "message.txt" -delete
+root@zjj-Inspiron-5557:/home# find / -name "message.txt"
+
+练习三
+zjj@zjj-Inspiron-5557:~$ man ls
+   根据结果知道human -readable output的flag是-h；
+zjj@zjj-Inspiron-5557:~$ man man
+zjj@zjj-Inspiron-5557:~$ cal            输入cal双击tab可查看到以下命令：
+cal            calendar       calibrate_ppa  caller         
+zjj@zjj-Inspiron-5557:~$ cal
+      六月 2018         
+日 一 二 三 四 五 六  
+                1  2  
+ 3  4  5  6  7  8  9  
+10 11 12 13 14 15 16  
+17 18 19 20 21 22 23  
+24 25 26 27 28 29 30  
+                     
+zjj@zjj-Inspiron-5557:~$ apropos calender
+calender：没有合适结果。
+zjj@zjj-Inspiron-5557:~$ man cal      查看calender命令怎样使用
+
+练习四
+zjj@zjj-Inspiron-5557:~$ find -name "*.png"
+./图片/2018-06-09 21-11-50 的屏幕截图.png
+./图片/2018-06-09 21-11-48 的屏幕截图.png
+./图片/2018-06-09 21-11-47 的屏幕截图.png
+./图片/2018-06-09 21-11-45 的屏幕截图.png
+./图片/2018-06-09 21-11-49 的屏幕截图.png
+zjj@zjj-Inspiron-5557:~$ rm -rf *.png
+zjj@zjj-Inspiron-5557:/home$ su
+密码： 
+root@zjj-Inspiron-5557:/# mv *.txt data        将txt文件移动到中data
+root@zjj-Inspiron-5557:/# mv *.png media       将png文件移动到media
+
+
+
