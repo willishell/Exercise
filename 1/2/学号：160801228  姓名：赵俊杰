@@ -1,0 +1,44 @@
+zjj@zjj-Inspiron-5557:~$ cd ..
+zjj@zjj-Inspiron-5557:/home$ sudo mkdir workbench
+[sudo] zjj 的密码： 
+zjj@zjj-Inspiron-5557:/home$ sudo touch /home/workbench/readme.txt
+zjj@zjj-Inspiron-5557:/workbench$ sudo echo "1
+ +> 2
+ +> 3">>readme.txt
+zjj@zjj-Inspiron-5557:/workbench$ cat readme.txt
+1
+2
+3
+zjj@zjj-Inspiron-5557:/home$ sudo touch list.txt
+zjj@zjj-Inspiron-5557:/home$ su
+密码： 
+root@zjj-Inspiron-5557:/home# ls >list.txt
+root@zjj-Inspiron-5557:/home# cat list.txt
+list.txt
+lost+found
+readme.txt
+workbench
+zjj
+root@zjj-Inspiron-5557:/home# ls
+list.txt  lost+found  readme.txt  workbench  zjj
+root@zjj-Inspiron-5557:/home# wc -m list.txt
+45 list.txt
+root@zjj-Inspiron-5557:/home# touch message.txt
+root@zjj-Inspiron-5557:/home# mv message.txt /tmp
+root@zjj-Inspiron-5557:/home# cd /tmp
+root@zjj-Inspiron-5557:/tmp# ls
+config-err-fC8TUR                                                       systemd-private-cfd3722c67df46b2915ce16a1f90e00e-fwupd.service-VveCld
+message.txt                                                             systemd-private-cfd3722c67df46b2915ce16a1f90e00e-rtkit-daemon.service-TC7Fpv
+ssh-yxNyTQuXr7md                                                        systemd-private-cfd3722c67df46b2915ce16a1f90e00e-systemd-resolved.service-jpAmfm
+systemd-private-cfd3722c67df46b2915ce16a1f90e00e-bolt.service-XJbyNJ    systemd-private-cfd3722c67df46b2915ce16a1f90e00e-systemd-timesyncd.service-V5CJmH
+systemd-private-cfd3722c67df46b2915ce16a1f90e00e-colord.service-LYxNk1  Temp-42d5f9f7-e269-47ce-a0bc-ea67e3bd82cf
+root@zjj-Inspiron-5557:/tmp# cp message.txt /home
+root@zjj-Inspiron-5557:/tmp# cd /home
+root@zjj-Inspiron-5557:/home# ls
+list.txt  lost+found  message.txt  readme.txt  workbench  zjj
+root@zjj-Inspiron-5557:/home# find / -name "message.txt"
+/home/message.txt
+/tmp/message.txt
+root@zjj-Inspiron-5557:/home# find / -name "message.txt" -delete
+root@zjj-Inspiron-5557:/home# find / -name "message.txt"
+
