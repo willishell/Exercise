@@ -1,0 +1,48 @@
+cd /home
+jiasong@jiasong-OMEN-by-HP-Laptop:/home$ mkdir workbench
+mkdir: 无法创建目录"workbench": 权限不够
+jiasong@jiasong-OMEN-by-HP-Laptop:/home$ su
+密码： 
+root@jiasong-OMEN-by-HP-Laptop:/home# mkdir workbench
+root@jiasong-OMEN-by-HP-Laptop:/home# touch /workbench/readme.txt
+touch: 无法创建'/workbench/readme.txt': 没有那个文件或目录
+root@jiasong-OMEN-by-HP-Laptop:/home# su jiasong
+jiasong@jiasong-OMEN-by-HP-Laptop:/home$ sudo touch /workbench/readme.txt
+[sudo] jiasong 的密码： 
+对不起，请重试。
+[sudo] jiasong 的密码： 
+对不起，请重试。
+[sudo] jiasong 的密码： 
+sudo: 3 次错误密码尝试
+jiasong@jiasong-OMEN-by-HP-Laptop:/home$ su
+密码： 
+root@jiasong-OMEN-by-HP-Laptop:/home# ls
+jiasong  lost+found  workbench
+root@jiasong-OMEN-by-HP-Laptop:/home# cd
+root@jiasong-OMEN-by-HP-Laptop:~# cd /home/workbench
+root@jiasong-OMEN-by-HP-Laptop:/home/workbench# ls
+root@jiasong-OMEN-by-HP-Laptop:/home/workbench# cd ..
+root@jiasong-OMEN-by-HP-Laptop:/home# touch -p /workbench/readme.txt
+touch: 不适用的选项 -- p
+Try 'touch --help' for more information.
+root@jiasong-OMEN-by-HP-Laptop:/home# cd workbench
+root@jiasong-OMEN-by-HP-Laptop:/home/workbench# touch readme.txt
+root@jiasong-OMEN-by-HP-Laptop:/home/workbench# ls
+readme.txt
+root@jiasong-OMEN-by-HP-Laptop:/home/workbench# vii readme.txt
+
+Command 'vii' not found, but there are 24 similar ones.
+
+root@jiasong-OMEN-by-HP-Laptop:/home/workbench# vi readme.txt
+root@jiasong-OMEN-by-HP-Laptop:/home/workbench# cat readme.txt
+1
+2
+3
+root@jiasong-OMEN-by-HP-Laptop:/home/workbench# ls /home>list.txt
+root@jiasong-OMEN-by-HP-Laptop:/home/workbench# cat list.txt
+jiasong
+lost+found
+workbench
+root@jiasong-OMEN-by-HP-Laptop:/home/workbench# wc -m list.txt
+29 list.txt
+root@jiasong-OMEN-by-HP-Laptop:/home/workbench# 
