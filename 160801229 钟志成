@@ -9,10 +9,10 @@ appex                 dev   lib    media       proc  run          sys  var
 bin                   etc   lib64  mnt         root  sbin         tmp
 [root@vultr /]# cd home
 [root@vultr home]# ls
-[root@vultr home]# mkdir workbench
+[root@vultr home]# mkdir workbench               //直接在home下建readme.txt  touch /home/workbench/readme.txt
 [root@vultr home]# cd workbench/
 [root@vultr workbench]# ls
-[root@vultr workbench]# pwd
+[root@vultr workbench]# pwd              
 /home/workbench
 [root@vultr workbench]# touch readme.txt
 [root@vultr workbench]# ls
