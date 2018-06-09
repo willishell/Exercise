@@ -2,13 +2,13 @@ zjj@zjj-Inspiron-5557:~$ cd ..
 zjj@zjj-Inspiron-5557:/home$ sudo mkdir workbench
 [sudo] zjj 的密码： 
 zjj@zjj-Inspiron-5557:/home$ sudo touch readme.txt
-zjj@zjj-Inspiron-5557:/home$ sudo vi readme.txt
+zjj@zjj-Inspiron-5557:/home$ sudo echo "1
+ +> 2
+ +> 3">>readme.txt
 zjj@zjj-Inspiron-5557:/home$ cat readme.txt
 1
 2
 3
-
-
 zjj@zjj-Inspiron-5557:/home$ sudo touch list.txt
 zjj@zjj-Inspiron-5557:/home$ su
 密码： 
