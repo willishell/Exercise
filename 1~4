@@ -1,0 +1,65 @@
+一
+root@my-Inspiron-5557:/home/workbench# touch message.txt
+root@my-Inspiron-5557:/home/workbench# rm message.txt
+root@my-Inspiron-5557:/home/workbench# cd ..
+root@my-Inspiron-5557:/home# touch message.txt
+root@my-Inspiron-5557:/home# mv message.txt /tmp
+root@my-Inspiron-5557:/home# cd /tmp
+root@my-Inspiron-5557:/tmp# ls
+config-err-ALYPhH
+message.txt
+ssh-yEymvxBcjKR8
+systemd-private-40aff4326e784a2ea7d335df735eca4c-bolt.service-Wk48rW
+systemd-private-40aff4326e784a2ea7d335df735eca4c-colord.service-ieKxx8
+systemd-private-40aff4326e784a2ea7d335df735eca4c-fwupd.service-ELD46h
+systemd-private-40aff4326e784a2ea7d335df735eca4c-rtkit-daemon.service-uXGSBQ
+systemd-private-40aff4326e784a2ea7d335df735eca4c-systemd-resolved.service-ourX3Y
+systemd-private-40aff4326e784a2ea7d335df735eca4c-systemd-timesyncd.service-qjX0ID
+root@my-Inspiron-5557:/tmp# cp message.txt /home
+root@my-Inspiron-5557:/tmp# cd /home
+root@my-Inspiron-5557:/home# ls
+lost+found  message.txt  readme.txt  workbench  my  zyjs
+root@my-Inspiron-5557:/home# cd workbench
+root@my-Inspiron-5557:/home/workbench# find / -name "message.txt"
+/home/message.txt
+find / -name "mess/tmp/message.txt
+root@my-Inspiron-5557:/home/workbench# find / -name "message.txt" -delete
+root@my-Inspiron-5557:/home/workbench# 
+
+二
+$ su
+密码： 
+root@my-Inspiron-5557:/home# mkdir workbench
+root@my-Inspiron-5557:/home# touch /home/workbench/readme.txt
+root@my-Inspiron-5557:/home# vi readme.txt
+root@my-Inspiron-5557:/home# cat readme.txt
+1
+2
+3
+root@my-Inspiron-5557:/home# ls >list.txt
+root@my-Inspiron-5557:/home# rm list.txt
+root@my-Inspiron-5557:/home# cd workbench
+root@my-Inspiron-5557:/home/workbench# ls >list.txt
+root@my-Inspiron-5557:/home/workbench# cat list.txt
+list.txt
+readme.txt
+root@my-Inspiron-5557:/home/workbench# ls
+list.txt  readme.txt
+root@my-Inspiron-5557:/home/workbench# wc -m list.txt
+20 list.txt
+
+三
+ man ls             human -readable output的flag是-h；
+ man man
+ cal            输入cal双击tab：
+apropos calender
+man cal      calender命令
+
+
+
+ 四
+ find -name "*.png"
+  rm -rf *.png 
+ # mv *.txt data        文件移动
+ # mv *.png media       文件移动
+ 
