@@ -1,0 +1,59 @@
+ex1.1
+admin@iZwz9bvze3wdvwqmx2l98kZ:~$ touch MasaG.txt
+admin@iZwz9bvze3wdvwqmx2l98kZ:~$ ls
+MasaG.txt  venv
+admin@iZwz9bvze3wdvwqmx2l98kZ:~$ mkdir test
+admin@iZwz9bvze3wdvwqmx2l98kZ:~$ ls
+MasaG.txt  test  venv
+admin@iZwz9bvze3wdvwqmx2l98kZ:~$ mv MasaG.txt test
+admin@iZwz9bvze3wdvwqmx2l98kZ:~$ ls
+test  venv
+admin@iZwz9bvze3wdvwqmx2l98kZ:~$ cd venv
+admin@iZwz9bvze3wdvwqmx2l98kZ:~/venv$ ls
+bin  django  include  lib  pip-selfcheck.json
+
+ex1.2
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin#  cp ./test/MasaG.txt MasaG.txt
+
+ex1.3
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin# find . -name MasaG.txt ¨Cdelete
+
+
+ex2.1
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin# mkdir Workbench
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin# ls
+venv  Workbench
+
+ex2.2
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin# touch Workbench/Read.txt
+
+ex2.3
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin/Workbench# vim Read.txt
+
+ex2.4
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin/Workbench# cat Read.txt
+1
+2
+3
+ex2.5
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin# ls >> Workbench/list.txt
+
+ex2.6
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin# wc -m Workbench/list.txt
+
+
+ex3.1
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin# man ls
+ex3.2
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin# man man
+ex3.3
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin# man  calendar
+
+
+ex4.1
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin# find . -regex ".*\.png"
+ex4.2
+root@iZwz9bvze3wdvwqmx2l98kZ:/home/admin# find . -name "hiking.*\.png"| xargs r
+m ¨Crf
+ex4.3
+admin@iZwz9bvze3wdvwqmx2l98kZ:~$ find - name "*.txt" |xargs  mv {} New_dir
