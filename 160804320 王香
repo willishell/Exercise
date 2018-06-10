@@ -35,7 +35,7 @@ Exercise 4
 3.整理数据 压缩再解压
   root@ubuntu:/home/ubuntu/data# tar czvf data.tar.gz *.txt
   root@ubuntu:/home/ubuntu/data# tar xzvf data.tar.gz -C scidata/
-  整理照片 先打包png在添加jpg 之后压缩解压 解包
+  整理照片 先打包png再添加jpg 之后压缩解压 解包
   root@ubuntu:/home/ubuntu/data# tar cf pic.tar *.png
   root@ubuntu:/home/ubuntu/data# tar rf pic.tar *.jpg  （r 添加）
   root@ubuntu:/home/ubuntu/data# tar czvf pic.tar.gz pic.tar
