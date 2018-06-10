@@ -36,4 +36,5 @@ root@DESKTOP-8HTTTIG:~# find . -regex '.*\.png'
 4.2
 root@DESKTOP-8HTTTIG:~# find . -name "*hiking*.png"
 4.3
-root@DESKTOP-8HTTTIG:~# find - name "*.txt" -exec mv {} New_dir
+root@DESKTOP-8HTTTIG:~# find - name "*.txt" -exec mv {} data
+root@DESKTOP-8HTTTIG:~# find - name "*.txt" -exec mv {} photo
