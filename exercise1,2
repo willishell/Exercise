@@ -1,23 +1,4 @@
-$ su
-密码： 
-root@my-Inspiron-5557:/home# mkdir workbench
-root@my-Inspiron-5557:/home# touch /home/workbench/readme.txt
-root@my-Inspiron-5557:/home# vi readme.txt
-root@my-Inspiron-5557:/home# cat readme.txt
-1
-2
-3
-root@my-Inspiron-5557:/home# ls >list.txt
-root@my-Inspiron-5557:/home# rm list.txt
-root@my-Inspiron-5557:/home# cd workbench
-root@my-Inspiron-5557:/home/workbench# ls >list.txt
-root@my-Inspiron-5557:/home/workbench# cat list.txt
-list.txt
-readme.txt
-root@my-Inspiron-5557:/home/workbench# ls
-list.txt  readme.txt
-root@my-Inspiron-5557:/home/workbench# wc -m list.txt
-20 list.txt
+一
 root@my-Inspiron-5557:/home/workbench# touch message.txt
 root@my-Inspiron-5557:/home/workbench# rm message.txt
 root@my-Inspiron-5557:/home/workbench# cd ..
@@ -44,3 +25,26 @@ root@my-Inspiron-5557:/home/workbench# find / -name "message.txt"
 find / -name "mess/tmp/message.txt
 root@my-Inspiron-5557:/home/workbench# find / -name "message.txt" -delete
 root@my-Inspiron-5557:/home/workbench# 
+
+二
+$ su
+密码： 
+root@my-Inspiron-5557:/home# mkdir workbench
+root@my-Inspiron-5557:/home# touch /home/workbench/readme.txt
+root@my-Inspiron-5557:/home# vi readme.txt
+root@my-Inspiron-5557:/home# cat readme.txt
+1
+2
+3
+root@my-Inspiron-5557:/home# ls >list.txt
+root@my-Inspiron-5557:/home# rm list.txt
+root@my-Inspiron-5557:/home# cd workbench
+root@my-Inspiron-5557:/home/workbench# ls >list.txt
+root@my-Inspiron-5557:/home/workbench# cat list.txt
+list.txt
+readme.txt
+root@my-Inspiron-5557:/home/workbench# ls
+list.txt  readme.txt
+root@my-Inspiron-5557:/home/workbench# wc -m list.txt
+20 list.txt
+
