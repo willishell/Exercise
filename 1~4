@@ -48,3 +48,18 @@ list.txt  readme.txt
 root@my-Inspiron-5557:/home/workbench# wc -m list.txt
 20 list.txt
 
+三
+ man ls             human -readable output的flag是-h；
+ man man
+ cal            输入cal双击tab：
+apropos calender
+man cal      calender命令
+
+
+
+ 四
+ find -name "*.png"
+  rm -rf *.png 
+ # mv *.txt data        文件移动
+ # mv *.png media       文件移动
+ 
