@@ -1,0 +1,70 @@
++[root@vultr ~]# cd ..
++[root@vultr /]# ls
++5hadowsocks-libev.sh  boot  home   lost+found  opt   rskernel.sh  srv  usr
++appex                 dev   lib    media       proc  run          sys  var
++bin                   etc   lib64  mnt         root  sbin         tmp
++[root@vultr /]# cd home
++[root@vultr home]# ls
++[root@vultr home]# mkdir workbench
++[root@vultr home]# cd workbench/
++[root@vultr workbench]# ls
++[root@vultr workbench]# pwd              
++/home/workbench
++[root@vultr workbench]# touch readme.txt
++[root@vultr workbench]# ls
++readme.txt
++[root@vultr workbench]# vi readme.txt
++[root@vultr workbench]# cat readme.txt
++1
++2
++3
++[root@vultr workbench]# ls /home >list.txt
++[root@vultr workbench]# cat list.txt
++workbench
++[root@vultr workbench]# wc -m list.txt
++10 list.txt
++
++
++
++
++[root@vultr workbench]# cd /home
++[root@vultr home]# touch message.txt
++[root@vultr home]# mv message.txt /tmp
++[root@vultr home]# cd /tmp
++[root@vultr tmp]# ls
++message.txt
++[root@vultr tmp]# cp message.txt /home
++[root@vultr tmp]# cd /home
++[root@vultr home]# ls
++message.txt  workbench
++[root@vultr workbench]# find / -name "message.txt"
++/tmp/message.txt
++/home/message.txt
++[root@vultr workbench]# find / -name "message.txt" -delete
++[root@vultr workbench]# find / -name "message.txt"
++
++
++
++
++[root@vultr ~]# man ls
++[root@vultr ~]# man man
++-bash: [root@vultr: command not found
++[root@vultr ~]# [root@vultr ~]# clear
++[root@vultr ~]# apropos calendar
++cal (1)              - display a calendar
++[root@vultr ~]# man cal
++[root@vultr ~]# cal -1
++      June 2018
++Su Mo Tu We Th Fr Sa
++                1  2
++ 3  4  5  6  7  8  9
++10 11 12 13 14 15 16
++17 18 19 20 21 22 23
++24 25 26 27 28 29 30
++
++
++
++
++[root@vultr ~]# find / -name "*.png"
++[root@vultr ~]# find / -name "*hiking*" -delete
++
