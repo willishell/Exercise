@@ -1,0 +1,49 @@
+作业1：
+①touch message.txt
+  mv message.txt/cmp
+  cd /tmp
+
+②cp workbench/message.txt ~
+
+③sudo apt install rsync
+  mkdir empty
+  mkdir test
+  mv ~/message.txt test
+  mv ~/workbench/message.txt test
+  rsync --delete-before -d empty/ test/
+  rmdir empty
+  rmdir test
+
+
+
+作业2：
+① mkdir workbench
+
+②touch workbench/readme.txt
+
+③echo -e "1\n2\n3" > workbench/readme.txt
+
+④cat workbench/readme.txt
+
+⑤touch workbench/list.txt
+  ls -al > workbench/list.txt
+
+⑥wc m workbench/list.txt
+
+
+作业3：
+① man ls
+
+② man man
+
+③在命令行输入cal 按两次TAB键查看相关命令 
+  查看calendar命令相关： man calendar  
+  
+  
+
+
+作业4：
+①find . -name "*.png"
+②rm -rf .*.png
+  mv test/*.txt data
+  mv test/*.png photo
