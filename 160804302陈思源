@@ -1,0 +1,25 @@
+exercise 1
+$touch message.txt
+$mv message.txt /home/text
+$cp -r /home/text /home
+$rm /
+
+ecercise2
+$mkdir /home/workbench
+$vim /home/workbench/readme.txt
+$echo -e"1\n2\n3" >/home/workbench/readme.txt
+$cat -n readme.txt
+$touch workbench / list.txt 
+$ls / home > /home/workbench/list.txt 
+$wc -m /home/workbench/list.txt 
+
+exercise 3
+$man 1s
+$apropos [-dalhvV][-e|-w-r][-s section]
+
+exercise 4
+$find . -name "*.png"
+$fine . -name "*hiking"
+$mv *.txt data
+$mv *.jpg photo
+ 
