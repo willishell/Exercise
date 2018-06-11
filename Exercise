@@ -51,5 +51,5 @@ find  -name  “*.png”
 find -name “*hiking*” -delete
 
 3.What series of commands would you use in order to put my figures for a data science course and the pictures I took in the lab into their own folders?
-mov *.txt data
-mov *.jpg photo
+mv *.txt data
+mv *.jpg photo
