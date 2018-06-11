@@ -1,0 +1,32 @@
+exercise1：
+touch message.txt
+
+mv message.txt /home/text
+
+cp -r /home/text /home
+rm /
+
+exercise2：
+mkdir / home / workbench
+vim /home/workbench/readme.txt
+echo -e “ 1 \ n2 \ n3 ”  > /home/workbench/readme.txt
+cat -n readme.txt
+touch workbench / list.txt
+  ls / home > /home/workbench/list.txt
+wc -m /home/workbench/list.txt
+
+exercise3：
+man ls
+man man
+apropos calendar
+man calendar
+
+exercise4：
+find -name“* .png”
+Before I organized the photos by year, what command would have listed all of the photos of type .png?
+find . -name "*.png"
+Before I organized the photos by year, what command would have deleted all of my hiking photos?
+find . -name "*hiking*"
+What series of commands would you use in order to put my figures for a data science course and the pictures I took in the lab into their own folders?
+mv *.txt data
+mv *.jpg photo
