@@ -1,0 +1,36 @@
+ 160804103 
+exercise1
+ 
+1)mkdir a 
+	cd a
+	2)touch message.txt
+	cp message.txt ..
+  	3)mkdir empty
+  	mkdir test
+  	mv ~/message.txt test
+  	mv ~/workbench/message.txt test
+  	rsync --delete-before -d empty/ test/
+  	rmdir empty
+  	rmdir test
+		exercise2
+	1)mkdir workbench
+	2)touch workbench/readme.txt
+	3)echo -e "1\n2\n3" >workbench/readme.txt
+	4)cat workbench/readme.txt
+	5)touch workbench/list.txt
+	  ls -a > workbench/list.txt
+	6)wc -m workbench/list.txt
+		exercise3
+	1¡ê?man ls
+	2) man man 
+	3) cal ???¡Âtab
+cal
+cal                 calibrate_ppa       callgrind_annotate
+calendar            caller              callgrind_control
+
+                exercise4
+	1¡ê?find . -name "*.png"
+	2¡ê?rm -rf .*.png
+	3¡ê?mv test/*.txt data
+	   mv test/*.png photo
+ 
