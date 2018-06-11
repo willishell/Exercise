@@ -1,0 +1,28 @@
+#Exercise1
+vim /home/message.txt
+mv /home/message.txt another
+cd /another
+cp -ai message.txt /home
+find /home -name 'message.*' -delete
+find /another -name 'message.*' -delete
+
+#Exercise2
+mkdir /home/workbench
+vim /home/workbench/readme.txt
+esc :wq
+echo -e "1\n2\n3" > /home/workbench/readme.txt
+cat -n readme.txt
+vim workbench/list.txt
+ls /home > /home/workbench/list.txt
+ls wc -m /home/workbench/list.txt
+
+#Exercise3
+man ls
+man man
+apropos calenda
+
+#Exercise4
+find . -name "*.png"
+find . -name "*hiking*"
+mv *.txt data
+mv *.jpg photo
