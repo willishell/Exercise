@@ -1,0 +1,57 @@
+Exercises 1
+1.	Create a file called message.txt in your home directory and move it into another directory.
+Sudo –s -H
+Cd home
+Touch message.txt
+
+Mv message.txt/*lib
+2.	Copy the message.txt you just moved into your home directory.
+Cp /lib/message.txt /home/message.txt
+3.	Delete both copies of message.txt. Try to do this without using rm.
+Sudo rm /
+Exercises 2
+1.	Create a new directory called workbench in your home directory.
+Sudo –s -H
+Cd home
+Mkdir workbench
+2.	Without changing directories create a file called readme.txt inside of workbench.
+Touch /home/workbench/read.txt
+3.	Append the numbers 1, 2, and 3 to readme.txt so that each number appears on it’s own line.
+Cd workbench
+echo “1” > readme.txt  
+echo “2” >> readme.txt 
+echo “3” >> readme.txt
+4.	Print readme.txt to the command line.
+Cat readme.txt
+5.	Use output redirection to create a new file in the workbench directory called list.txt which lists the files and folders in your home directory.
+Ls -l > list.txt
+6.	Find out how many characters are in list.txt without opening the file or printing it to the command line.
+Wc -m list.txt
+
+Exercises
+1.	Use man to look up the flag for human-readable output from ls.
+-h, with –l and/or –s,print human readable sizes
+
+2.	Get help with man by typing man man into the console.
+ 
+
+3.	Wouldn’t it be nice if there was a calendar command? Use apropos to look for such a command, then use man to read about how that command works.
+Synopsis:
+   Calendar [-ab][-A num] [-l num] [-w num] [-f calendarfile] [-t [[[cc]yy]mm]dd]
+ 
+Exercises
+1.	Before I organized the photos by year, what command would have listed all of the photos of type .png?
+Find –name “*.png”
+2.	Before I organized the photos by year, what command would have deleted all of my hiking photos?
+Rm –I “*.jpg”
+
+
+3.	What series of commands would you use in order to put my figures for a data science course and the pictures I took in the lab into their own folders?
+Sudo –s –H 进入管理员模式；
+Cd 至保存图片的文件夹
+find  . “指定文件类型”{-atime/-ctime/-mtime/-amin/-cmin/-mmin} [-/+]num  mv{} /指定文件夹     ： 如果照片拍摄时间不同，可以根据时间找到对应照片集合并打包移动到指定文件夹。
+或mv 文件名 /指定文件夹/；
+
+
+
+
