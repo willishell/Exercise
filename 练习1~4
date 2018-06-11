@@ -1,0 +1,25 @@
+Exercise 1:
+1. touch /home/message.txt
+mv /home/message.txt distination
+2.cp message.txt /home/message.txt
+3. find /home -name“message.txt” -delete
+
+Exercise 2:
+1.mkdir / home / workbench
+2.vim /home/workbench/readme.txt
+3.echo -e “ 1 \ n2 \ n3 ”  > /home/workbench/readme.txt
+4.cat -n readme.txt
+5.touch workbench / list.txt
+  ls / home > /home/workbench/list.txt
+6.wc -m /home/workbench/list.txt
+
+Exercise 3:
+1.man ls
+2.man man
+3.apropos calenda
+
+Exercise 4:
+1.find -name“* .png”
+2.find -name“* hiking *”-delete
+3.mv * .txt
+  mv * .jpg
