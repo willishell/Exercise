@@ -1,0 +1,28 @@
+#Exercises 1
+touch /home/message.txt 
++mv /home/message.txt distination 
+cp message.txt /home/message.txt
+unlink message.txt && unlink /home/message.txt 
+
+#Exercises 2
+mkdir /home/workbench 
+vim /home/workbench/readme.txt 
+esc + :wq 
+echo -e "1\n2\n3" > /home/workbench/readme.txt
+cat -n readme.txt 
+touch workbench/list.txt 
+ls /home > /home/workbench/list.txt 
+wc -m /home/workbench/list.txt 
+
+
+#Exercises 3
+man ls 
+man man 
+apropos calenda 
+
+
+#Exercises 4
+find . -name "*.png" 
+find . -name "*hiking*" 
+mv *.txt data 
+mv *.jpg photo 
