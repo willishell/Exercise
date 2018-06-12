@@ -3,24 +3,24 @@ Exercise 1
 touch message.txt
 mv [options] message.txt another directory
 2  cp /home/message.txt / another directory
-3  find . -type f â€“delete message.txt
+3  find . -type f ¨Cdelete message.txt
 
 Exercise 2
 1 #cd /
-#mkdir /workbench
+  #mkdir /workbench
 2 #cd /
-#mkdir /workbench
-#touch /workbench/readme.txt
+  #mkdir /workbench
+  #touch /workbench/readme.txt
 3 sed -i '1i\1' readme.txt
   sed -i '2i\2' readme.txt
-sed -i '3i\3' readme.txt
+  sed -i '3i\3' readme.txt
 
 4 cat readme.txt
 
 5 #cd/
-touch list.txt
+  touch list.txt
   ls /root >>list.txt
- cat list.txt
+  cat list.txt
  
 6 $ wc -m list.txt
 
@@ -30,8 +30,9 @@ Exercise 3
 3 apropos man
 
 Exercise 4
-1 find. â€“name â€œ*.pngâ€
-2 rm â€“rf .*.png
+
+1 find. ¨Cname ¡°*.png¡±
+2 rm ¨Crf .*.png
 3 mv test/*.txt date
 mv test/*.pmg photo
 
