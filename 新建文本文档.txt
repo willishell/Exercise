@@ -6,16 +6,16 @@
 5touch workbench/list.txt             
 ls>workbench/list.txt 
 6.wc -m workbench/list.txt
-Á·Ï°¶þ
+
 1.mv message.txt work
 2.cp -r /home/workbench/message.txt /home/Linux         
 3.unalias -u home/message.txt
-Á·Ï°Èý
+
 man ls          
 man man              
 apropos man         
 man cal
-Á·Ï°ËÄ
+
 find . -name "*.png"          
 fine . -name "*hiking"          
 mv *.txt data        
