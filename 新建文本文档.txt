@@ -1,0 +1,70 @@
++
++[root@yuan ~]# cd ..
++[root@yuan /]# ls
++5hadowsocks-libev.sh  boot  home   lost+found  opt   rskernel.sh  srv  usr
++appex                 dev   lib    media       proc  run          sys  var
++bin                   etc   lib64  mnt         root  sbin         tmp
++[root@yuan /]# cd home
++[root@yuan]# ls
++[root@yuan]# mkdir workbench /home/workbench/readme.txt
++[root@yuan]# cd workbench/
++[root@yuan workbench]# ls
++[root@yuan workbench]# pwd              
++/home/workbench
++[root@yuan workbench]# touch readme.txt
++[root@yuan workbench]# ls
++readme.txt
++[root@yuan workbench]# vi readme.txt
++[root@yuan workbench]# cat readme.txt
++1
++2
++3
++[root@yuan workbench]# ls /home >list.txt
++[root@yuan workbench]# cat list.txt
++workbench
++[root@yuan workbench]# wc -m list.txt
++10 list.txt
++
++
++
++
++[root@yuan workbench]# cd /home
++[root@yuan]# touch message.txt
++[root@yuan]# mv message.txt /tmp
++[root@yuan]# cd /tmp
++[root@yuan tmp]# ls
++message.txt
++[root@yuan tmp]# cp message.txt /home
++[root@yuan tmp]# cd /home
++[root@yuan]# ls
++message.txt  workbench
++[root@yuan workbench]# find / -name "message.txt"
++/tmp/message.txt
++/home/message.txt
++[root@yuan workbench]# find / -name "message.txt" -delete
++[root@yuan workbench]# find / -name "message.txt"
++
++
++
++
++[root@yuan ~]# man ls
++[root@yuan ~]# man man
++-bash: [root@yuan: command not found
++[root@yuan ~]# [root@yuan ~]# clear
++[root@yuan ~]# apropos calendar
++cal (1)              - display a calendar
++[root@yuan ~]# man cal
++[root@yuan ~]# cal -1
++      June 2018
++Su Mo Tu We Th Fr Sa
++                1  2
++ 3  4  5  6  7  8  9
++10 11 12 13 14 15 16
++17 18 19 20 21 22 23
++24 25 26 27 28 29 30
++
++
++
++
++[root@yuan ~]# find / -name "*.png"
++[root@yuan ~]# find / -name "*hiking*" -delete
