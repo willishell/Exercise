@@ -1,0 +1,43 @@
+exercise1
+#!/bin/bash
+cd ~
+touch message.txt
+mkdir another
+mv message.txt another/
+cp another/message.txt .
+mv message.txt /tmp
+mv another/message.txt /tmp
+rm -r another
+
+
+
+exercise2
+#!/bin/bash
+cd ~
+mkdir workbench
+touch workbench/readme.txt
+echo 1 >> workbench/readme.txt
+echo 2 >> workbench/readme.txt
+echo 3 >> workbench/readme.txt
+cat workbench/readme.txt
+ls > /workbench/list.txt
+wc -m /workbench/list.txt
+
+
+exercise3
+#!/bin/bash
+man ls
+man man
+apropos calendar
+man cal
+
+
+exercise4
+#!/bin/bash
+find . -name "*.png"
+find . -name "*hiking*" -delete
+mkdir txts
+mkdir pngs
+mv *.txt txts
+mv *.png pngs
+
