@@ -1,0 +1,29 @@
+Exercise 1
+1.	touch message.txt
+	mkdir ~/test
+	mv message.txt ~/test/
+2.	cp message.txt ~/message.txt
+3.	unlink ~/message.txt
+	unlink ~/test/message.txt
+
+
+Exercise 2
+1.	mkdir workbench
+2.	touch ~/workbench/readme.txt
+3	echo -e "1\n2\n3" > ~/workbench/readme.txt
+4.	cat -n ~/workbench/readme.txt
+5.	ls ~ > ~/workbench/list.txt
+6.	wc -m ~/workbench/list.txt
+
+
+Exercise 3
+1.	man ls
+2.	man man
+3.	apropos calendar
+	man calendar
+
+Exercise 4
+1.	find . -name “*.png"
+2.	find . -name "*hiking*" -delete
+3.	mv *.txt txts
+	mv *.png pngs
