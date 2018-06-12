@@ -1,0 +1,25 @@
+1
+mkdir work
+touch work/readme.txt
+echo -e "1\n2\n3">>readme.txt
+cat readme.txt
+cd ..
+ls>work/list.txt
+wc -c work/list.txt
+2
+cd /home     
+mkdir workbench    
+cd /home/workbench     
+touch readme.txt  
+cat -n readme.txt        .   
+touch list.txt
+3
+man 1s    
+man man
+apropos cal
+man cal
+4
+find -name  \*.png
+rm*hike.pngmv ./*.png
+photo/ && mv ./*.data data/
+
