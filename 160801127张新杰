@@ -1,0 +1,25 @@
+一
+mkdir workbench
+touch workbench/readme.txt
+echo -e "1\n2\n3">>readme.txt
+cat readme.txt
+cd ..
+ls>workbench/list.txt
+wc -c workbench/list.txt
+
+二
+mv message.txt work
+cp -r /home/workbench/message.txt /home/Linux
+unalias -u home/message.txt
+
+三
+man ls
+man man
+apropos man
+man cal
+
+四
+find . -name "*.png"
+fine . -name "*hiking"
+mv *.txt data
+mv *.jpg photo
