@@ -1,0 +1,31 @@
++exercise1.
+ +root@ubuntu:/home# touch message.txt
+ +root@ubuntu:/home# mkdir A
+ +root@ubuntu:/home# mv message.txt /home/A/
+ +root@ubuntu:/home/A# cp message.txt /home
+ +root@ubuntu:/home# find /home -name "message.txt" -delete
+ + 
+ +2
+ +root@ubuntu:/home# mkdir workbench
+ +root@ubuntu:/home# touch workbench/readme.txt
+ +root@ubuntu:/home# vim readme.txt
+ +root@ubuntu:/home# ls /home >> /home/workbench/list.txt 
+ +root@ubuntu:/home# wc -m /home/workbench/list.txt
+ + 
+ + 3.
+ +root@ubuntu:/home# man ls
+ +root@ubuntu:/home# man man
+ +root@ubuntu:/home# apropos calendar
+ +root@ubuntu:/home# man calendar
+ +    
+ +4.
+ + oot@ubuntu:/home/ubuntu/data# find -name "*.png"
+ +root@ubuntu:/home/ubuntu/data# find -name "*hiking*" -delete
+ +root@ubuntu:/home/ubuntu/data# tar czvf data.tar.gz *.txt
+ +root@ubuntu:/home/ubuntu/data# tar xzvf data.tar.gz -C scidata/
+ +root@ubuntu:/home/ubuntu/data# tar cf pic.tar *.png
+ +root@ubuntu:/home/ubuntu/data# tar rf pic.tar *.jpg 
+ +root@ubuntu:/home/ubuntu/data# tar czvf pic.tar.gz pic.tar
+ +root@ubuntu:/home/ubuntu/data# tar xzvf pic.tar.gz -C labpic/
+ +root@ubuntu:/home/ubuntu/data# cd labpic
+ +root@ubuntu:/home/ubuntu/data/labpic# tar xf pic.tar
