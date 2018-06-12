@@ -1,0 +1,44 @@
++Exercises 1
+ +1.Create a file called message.txt in your home directory and move it into another directory.
+ +   	touch message.txt
+ +2.Copy the message.txt you just moved into your home directory.
+ +    mv message.txt /home/jt
+ +3.Delete both copies of message.txt. Try to do this without using rm.
+ +    find /home -name ''message.* -delete
+ +    
+ +Exercises 2
+ +1.Create a new directory called workbench in your home directory.
+ +    mkdir workbench
+ +2.Without changing directories create a file called readme.txt inside of workbench.
+ +    touch  /home/workbench/readme.txt
+ +3.Append the numbers 1, 2, and 3 to readme.txt so that each number appears on it’s own line.
+ +    Echo “1
+ +    2
+ +    3”>>readme.txt
+ +4.Print readme.txt to the command line.
+ +    cat readme.txt
+ +5.Use output redirection to create a new file in the workbench directory called list.txt which lists the files and folders in your home directory.
+ +    ls -l > ./workbench/ list.txt
+ +6.Find out how many characters are in list.txt without opening the file or printing it to the command line.
+ +    wc -m list.txt
+ +    
+ +Exercises 3
+ +7.Use man to look up the flag for human-readable output from ls.
+ +    ls -l
+ +8.Get help with man by typing man man into the console.
+ +    man man
+ +9.Wouldn’t it be nice if there was a calendar command? Use apropos to look for such a command, then use man to read about how that command works.
+ + 		apropos calendar  :cal,calendar,ncal
+ +    man calendar
+ +    
+ +Exercises 4
+ +10.Before I organized the photos by year, what command would have listed all of the photos of type .png?
+ +    ls  *.png
+ +
+ +11.Before I organized the photos by year, what command would have deleted all of my hiking photos?
+ +    rm  -rf .*
+ +12.What series of commands would you use in order to put my figures for a data science course and the pictures I took in the lab into their own folders?
+ +    mkdir data science
+ +    mkdir lab
+ +    mv fingures(目录或文件名)  data science（目录名） 
+ +    mv pictures lab
