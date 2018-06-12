@@ -25,13 +25,11 @@
 +man ls
 +man man
 +apropos calendar
-+man cal
++man calendar
 
 +#!/bin/bash
-+
 +find . -name "*.png"
 +find . -name "*hiking*" -delete
-+
 +mkdir txts
 +mkdir pngs
 +mv *.txt txts
