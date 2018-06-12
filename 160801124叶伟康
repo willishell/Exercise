@@ -1,20 +1,20 @@
 实验一               
-mkdir work
-touch work/readme.txt
+mkdir workbench
+touch workbench/readme.txt
 echo -e "1\n2\n3">>work/readme.txt
-cat work/readme.txt
-touch work/list.txt
+cat workbench/readme.txt
+touch workbench/list.txt
 path=/Users/macbook/
-find $path -name *.md>>work/list.txt
-wc -m work/list.txt
+find $path -name *.md>>workbench/list.txt
+wc -m workbench/list.txt
 
 实验二            
 home_path=/Users/macbook/      
 shell_path=/Users/macbook/desktop/shell_script/work/           
-touch mill.txt     
-mv mill.txt $shell_path         
+touch message.txt     
+mv message.txt $shell_path         
 cp /Users/macbook/desktop/shell_script/work/message.txt $home_path             
-find $home_path -name "mill.txt" -delete            
+find $home_path -name "message.txt" -delete            
 
 实验三
 man ls
