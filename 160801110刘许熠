@@ -1,0 +1,27 @@
+1.
+#cd
+#mkdir/WorkBench
+2.
+#cd
+#mkdir/WorkBench
+#touch/WorkBench/Readme.txt
+3.
+#sed –i 1i\1 Readme.txt
+#sed –i 2i\2 Readme.txt
+#sed –i 3i\3 Readme.txt
+4.
+#sed –n “1,3p” Readme.txt
+5.
+#Is –I/WorkBench/ | grep^d | awk’{print $9}’>./list.txt
+6.
+#cat list.txt|wc -c
+
+1.
+#touch/home/message.txt
+#mv message.txt another directory
+2.
+#touch/home/message1.txt
+#cp message.txt message1.txt
+3.
+Find.-type f –delete message.txt
+Find.-type f –delete message1.txt
