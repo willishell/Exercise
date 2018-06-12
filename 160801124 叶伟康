@@ -1,0 +1,31 @@
+实验一             
+mkdir workbench
+touch workbench/readme.txt
+echo -e "1\n2\n3">>workbench/readme.txt
+cat workbench/readme.txt
+touch workbench/list.txt
+path=/Users/macbook/
+find $path -name *.md>>workbench/list.txt
+wc -m workbench/list.txt
+
+实验二           
+home_path=/Users/macbook/     
+shell_path=/Users/macbook/desktop/shell_script/workbench/       
+touch message.txt    
+mv message.txt $shell_path      
+cp /Users/macbook/desktop/shell_script/workbench/message.txt $home_path     
+find $home_path -name "message.txt" -delete 
+
+实验三
+man ls
+man man
+apropos man
+man cal
+
+实验四          
+find . -name "*.png"            
+find . -name "*hiking*" -delete
+mkdir datas
+mkdir pigs
+mv *.txt datas
+mv *.png pigs
