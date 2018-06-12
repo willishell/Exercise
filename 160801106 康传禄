@@ -1,0 +1,45 @@
+Exercise 1 
++cd ~ 
++mkdir 'workbench' 
++touch 'workbench/readme.txt' 
++cat << EOF >> 'workbench/readme.txt' 
++1 
++2 
++3 
++EOF 
++cat 'workbench/readme.txt' 
++ls >> 'workbench/list.txt' 
++wc -c 'workbench/list.txt' 
++ 
+
+
+Exercise 2 
++cd ~ 
++touch 'message.txt' 
++mv 'message.txt' 'workbench/message.txt' 
++cp 'workbench/message.txt' 'message.txt' 
++find 'workbench/message.txt' -delete 
++find 'message.txt' -delete 
++ 
+
+
+
+Exercise 3
++man ls 
++man man 
++apropos calendar 
++man cal 
+View    
+9 exercise4.sh 
+@@ -0,0 +1,9 @@
+
+
+Exercise 4
++ 
++find . -name "*.png" 
++find . -name "*hiking*" -delete 
++ 
++mkdir txts 
++mkdir pngs 
++mv *.txt txts 
++mv *.png pngs 
