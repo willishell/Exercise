@@ -1,0 +1,40 @@
+@@ -0,0 +1,39 @@
+ +Á·Ï°1
+ +#!/bin/bash
+ + +cd ~
+ + +touch message.txt
+ + +mkdir workbench
+ + +mv message.txt workbench/message.txt
+ + +cd workbench
+ + +cp message.txt ../message.txt
+ + +mv message.txt /tmp
+ + +cd ..
+ + +mv message.txt /tmp
+ + 
+ + Á·Ï°2
+ + +#!bin/bash
+ + +cd ~
+ + +mkdir workbench
+ + +cd workbench
+ + +touch readme.txt
+ + +echo "1" < readme.txt
+ + +echo "2" < readme.txt
+ + +echo "3" < readme.txt
+ + +cat readme.txt
+ + +cd ..
+ + +ls > workbench/list.txt
+ + +cd workbench
+ + +wc -c list.txt
+ + 
+ + Á·Ï°3
+ + +#!/bin/bash
+ + +man ls
+ + +man man
+ + +apropos calendar
+ + +man cal
+ + 
+ + Á·Ï°4
+ + +$find . -name "*.png"
+ + +$fine . -name "*hiking"
+ + +$mv *.txt data
+ + +$mv *.jpg photo
