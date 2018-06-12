@@ -1,0 +1,62 @@
+yangjihao@yangjihao-VirtualBox:/$ cd /home  
+yangjihao@yangjihao-VirtualBox:/home$ sudo mkdir workbench  
+yangjihao@yangjihao-VirtualBox:/home$ sudo touch readme.txt  
+yangjihao@yangjihao-VirtualBox:/home$ sudo sh -c 'echo "1" >> readme.txt'  
+yangjihao@yangjihao-VirtualBox:/home$ sudo sh -c 'echo "2" >> readme.txt'  
+yangjihao@yangjihao-VirtualBox:/home$ sudo sh -c 'echo "3" >> readme.txt'  
+yangjihao@yangjihao-VirtualBox:/home$ cat readme.txt  
+1  
+2  
+3  
+yangjihao@yangjihao-VirtualBox:/home$ sudo touch list.txt  
+yangjihao@yangjihao-VirtualBox:/home$ sudo sh -c 'ls / > list.txt'  
+yangjihao@yangjihao-VirtualBox:/home$ cat list.txt  
+bin  
+boot  
+cdrom  
+dev  
+etc  
+home  
+initrd.img  
+initrd.img.old  
+lib  
+lib64  
+lost+found  
+media  
+messsage.txt  
+mnt  
+opt  
+proc  
+root  
+run  
+sbin  
+snap  
+srv  
+swapfile  
+sys  
+tmp  
+usr  
+var  
+vmlinuz  
+workbench  
+yangjihao@yangjihao-VirtualBox:/home$ wc -m list.txt  
+173 list.txt  
+[objc] view plain copy
+yangjihao@yangjihao-VirtualBox:/home$ cd /home  
+yangjihao@yangjihao-VirtualBox:/home$ man ls  
+yangjihao@yangjihao-VirtualBox:/home$ man man  
+yangjihao@yangjihao-VirtualBox:/home$ apropos calendar  
+calendar：没有合适结果。  
+yangjihao@yangjihao-VirtualBox:/home$ man calendar  
+yangjihao@yangjihao-VirtualBox:/home$  
+
+[objc] view plain copy
+yangjihao@yangjihao-VirtualBox:/home$ find . -name ".png"  
+yangjihao@yangjihao-VirtualBox:/home$ find . -name "*hiking*" -delete  
+yangjihao@yangjihao-VirtualBox:/home$ mkdir txts  
+mkdir: 无法创建目录"txts": 权限不够  
+yangjihao@yangjihao-VirtualBox:/home$ sudo mkdir txts  
+[sudo] yangjihao 的密码：   
+yangjihao@yangjihao-VirtualBox:/home$ sudo mkdir pngs  
+yangjihao@yangjihao-VirtualBox:/home$ sudo mv *.txt txts  
+yangjihao@yangjihao-VirtualBox:/home$ sudo mv *.png pngs 
