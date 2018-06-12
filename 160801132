@@ -1,0 +1,20 @@
+#sudo mkdir workbench   #1
+ cd workbench
+ touch readme.txt        #2
+ sh -c 'echo "1\n2\n3\n" > readme.txt'  #3
+ cat readme.txt        #4
+ touch list.txt
+ ls -Fl ~ > list.txt   #5
+ wc -m list.txt        #6
+ #!/bin/bash
+ touch message.txt   
+ mv message.txt Documents   
+ ls -l Documents   
+ cd Documents  
+ sudo cp message.txt /home  
+ unlink message.txt        #delete message.txt
+ cd /home
+ sudo unlink message.txt   #delete message.txt from /home
+ #--------------
+ #sudo chmod -R 777 /home   --CHENGE AUTHORTY
+ #--------------
