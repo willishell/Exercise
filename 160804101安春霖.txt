@@ -1,0 +1,38 @@
+Exercise 1
++1. root@ubuntu:/home# touch message.txt
++   root@ubuntu:/home# mkdir A
++   root@ubuntu:/home# mv message.txt /home/A/
++2. root@ubuntu:/home/A# cp message.txt /home
++3. root@ubuntu:/home# find /home -name "message.txt" -delete
++
++Exercise 2
++1. root@ubuntu:/home# mkdir workbench
++2. root@ubuntu:/home# touch workbench/readme.txt
++3. root@ubuntu:/home# vim readme.txt
++   输入i进行编辑 结束esc ：wq退出
++4. root@ubuntu:/home# cat -n readme.txt (-n 打印行数)
++5. root@ubuntu:/home# ls /home >> /home/workbench/list.txt （重定向输出）
++6. root@ubuntu:/home# wc -m /home/workbench/list.txt （-m 统计字符数）
++
++Exercise 3
++1. root@ubuntu:/home# man ls
++2. root@ubuntu:/home# man man
++3. root@ubuntu:/home# apropos calendar
++   出现三个结果
++   root@ubuntu:/home# man calendar
++   
++Exercise 4
++创建一个文件夹data里面有 jpg png txt 三种格式的文件,还有两个文件夹 labpic scidata
++1.root@ubuntu:/home/ubuntu/data# find -name "*.png"
++2.root@ubuntu:/home/ubuntu/data# find -name "*hiking*" -delete
++3.整理数据 压缩再解压
++  root@ubuntu:/home/ubuntu/data# tar czvf data.tar.gz *.txt
++  root@ubuntu:/home/ubuntu/data# tar xzvf data.tar.gz -C scidata/
++  整理照片 先打包png在添加jpg 之后压缩解压 解包
++  root@ubuntu:/home/ubuntu/data# tar cf pic.tar *.png
++  root@ubuntu:/home/ubuntu/data# tar rf pic.tar *.jpg  （r 添加）
++  root@ubuntu:/home/ubuntu/data# tar czvf pic.tar.gz pic.tar
++  root@ubuntu:/home/ubuntu/data# tar xzvf pic.tar.gz -C labpic/
++  root@ubuntu:/home/ubuntu/data# cd labpic
++  root@ubuntu:/home/ubuntu/data/labpic# tar xf pic.tar
++  
