@@ -1,0 +1,34 @@
+练习1 
+1.touch message.txt 
+mkdir CFY 
+mv message.txt / CFY 
+2.cp message.txt / CFY 
+3.sudo apt安装rsync 
+mkdir空//创建目录空和测试
+mkdir测试mv〜
+/ message.txt测试
+mv〜 /workbench/message.txt test 
+rsync --delete-before -d empty / test / // - delete-before接收者在传输之前进行操作，删除empty和test的文件
+rmdir empty //删除空目录empty和test 
+rmdir测试
+
+练习2 
+1.mkdir workbench 
+2.touch workbench / readme.txt 
+3.echo -e“1 \ n2 \ n3”> workbench / readme.txt 
+4.cat workbench / readme.txt 
+5.ls -a home 
+命令> workbench / List.txt 
+6.wc -m workbench / List.txt
+
+练习3 
+1.man ls 2.man 
+man 
+3.apropos calendar 
+man calendar
+
+练习4 1. 
+找到。-name“ .png” 
+2.find。-name“ hiking ”-delete 
+3.mv test / .txt data //假设数据和照片分别以txt和陪你过格式存放于测试目录中
+mv test / * .png photo
