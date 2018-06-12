@@ -1,0 +1,40 @@
+Á·Ï°1£º
+touch message.txt
+mv message.txt workbench
+cp workbench/message.txt ~
+sudo apt install rsync
+mkdir empty
+mkdir test
+mv ~/message.txt test
+mv ~/workbench/message.txt test
+rsync --delete-before -d empty/ test/
+rmdir empty
+rmdir test
+
+Á·Ï°2
+#!bin/bash
+cd ~
+mkdir workbench
+cd workbench
+touch readme.txt
+echo "1" < readme.txt
+echo "2" < readme.txt
+echo "3" < readme.txt
+cat readme.txt
+cd
+ls > workbench/list.txt
+cd workbench
+wc -c list.txt
+ 
+Á·Ï°3
+#!/bin/bash
+man ls
+man man
+apropos calendar
+man cal
+
+Á·Ï°4
+$find . -name "*.png"
+$fine . -name "*hiking"
+$mv *.txt data
+$mv *.jpg photo
