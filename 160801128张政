@@ -1,0 +1,30 @@
+练习一
+1.mkdir workbench
+2.touch workbench/readme.txt
+3.echo -e "1\n2\n3">>readme.txt
+4.cat readme.txt
+5.cd ..
+ls>workbench/list.txt
+6.wc -c workbench/list.txt
+练习二
+1.mv message.txt workbench
+2.cp -r /home/workbench/message.txt /home/Linux
+3.unalias -u home/message.txt
+
+练习三
+1.man [flag] ls
+2.man man 显示man的帮助文献
+3.man cal 参看cal的实现方式
+cal调用日历命令s
+练习四
+1.ls -u -lt *.png
+-lt是表示按访问时间和名称来排序显示
+2.rm *hiking*
+删除名字中有hiking的文件
+3.
+（1）find a/ -name '*.png' |xargs tar czf hiking.tgz
+a是源文件所在的文件夹，hiking.tgz是压缩后的文件名
+用find指令找到对应的所有指定类型的文件，后用tar czf指令进行压缩，压缩为tgz类型的压缩包
+（2）tar zxvf hiking.tgz -C hiking
+hiking为文件名
+用tar zxvg指令进行解压，并放在指定文件夹中
