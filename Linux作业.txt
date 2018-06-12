@@ -1,52 +1,31 @@
-+×÷Òµ1£º
-+¢Ùtouch message.txt
-+  mv message.txt workbench
++å®éªŒä¸€             
++mkdir workbench
++touch workbench/readme.txt
++echo -e "1\n2\n3">>workbench/readme.txt
++cat workbench/readme.txt
++touch workbench/list.txt
++path=/Users/macbook/
++find $path -name *.md>>workbench/list.txt
++wc -m workbench/list.txt
 +
-+¢Úcp workbench/message.txt ~
++å®éªŒäºŒ           
++home_path=/Users/macbook/     
++shell_path=/Users/macbook/desktop/shell_script/workbench/       
++touch message.txt    
++mv message.txt $shell_path      
++cp /Users/macbook/desktop/shell_script/workbench/message.txt $home_path     
++find $home_path -name "message.txt" -delete 
 +
-+¢Ûsudo apt install rsync
-+  mkdir empty
-+  mkdir test
-+  mv ~/message.txt test
-+  mv ~/workbench/message.txt test
-+  rsync --delete-before -d empty/ test/
-+  rmdir empty
-+  rmdir test
++å®éªŒä¸‰
++man ls
++man man
++apropos man
++man cal
 +
-+
-+
-+×÷Òµ2£º
-+¢Ù mkdir workbench
-+
-+¢Útouch workbench/readme.txt
-+
-+¢Ûecho -e "1\n2\n3" > workbench/readme.txt
-+
-+¢Ücat workbench/readme.txt
-+
-+¢İtouch workbench/list.txt
-+  ls -al > workbench/list.txt
-+
-+¢Şwc m workbench/list.txt
-+
-+
-+×÷Òµ3£º
-+¢Ù man ls
-+  ¸ù¾İÃüÁî½á¹û¿ÉÒÔ¿´µ½ human-readable output µÄ±ê¼ÇÊÇ -h 
-+
-+¢Ú man man
-+
-+¢ÛÔÚÃüÁîĞĞÊäÈëcal °´Á½´ÎTAB¼ü²é¿´Ïà¹ØÃüÁî 
-+  ²é¿´calendarÃüÁîÊ¹ÓÃ·½·¨£º man calendar  
-+  
-+  
-+
-+
-+×÷Òµ4£º
-+¢Ùfind . -name "*.png"
-+
-+¢Úrm -rf .*.png
-+
-+¢Û¼ÙÉèÊı¾İ´æÎªtxtÎÄ¼ş ÕÕÆ¬´æÎªpngÎÄ¼ş ¹²Í¬´æ·ÅÓÚtestÎÄ¼ş¼ĞÏÂ
-+  mv test/*.txt data
-+  mv test/*.png photo
++å®éªŒå››          
++find . -name "*.png"            
++find . -name "*hiking*" -delete
++mkdir datas
++mkdir pigs
++mv *.txt datas
++mv *.png pigs
