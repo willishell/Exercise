@@ -1,0 +1,23 @@
+练习一
+1.touch message.txt
+mv message.txt workbench
+2.cp -r /home/workbench/message.txt /home/Linux
+3.rm home/message.txt /home/workbench/message.txt
+练习二
+1.mkdir workbench
+2.touch workbench/readme.txt
+3.echo -e "1\n2\n3">>readme.txt
+4.cat readme.txt
+5.cd ..
+ls>workbench/list.txt
+6.wc -c workbench/list.txt
+练习三
+1.man [flag] ls
+2.man man
+3.apropos cal
+man cal
+练习四
+1.ls -u -lt *.png
+2.rm *hiking*
+3.mv *.txt data
+mv *.jpg photo
