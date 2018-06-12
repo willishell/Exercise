@@ -1,0 +1,30 @@
+Exercise 1
+
+ touch message.txt
+ mkdir workbench
+ mv message.txt workbench/message.txt
+ cd workbench
+ cp message.txt  ../message.txt
+ mv message.txt  /tmp
+ cd ..
+ mv message.txt  /tmp
+
+Exercise 2
+
+  mv message.txt workbench
+  cp -r /home/workbench/message.txt /home/Linux
+  unalias -u home/message.txt
+
+Exercise 3
+
+  man [flag]ls
+  man man
+  man cal
+ 
+ 
+Exercise 4
+  ls-lt *.png
+  rm-f *hiking*
+  mv *.fig dat
+  mv *.jpg pic
+ 
