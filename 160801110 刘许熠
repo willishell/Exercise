@@ -1,0 +1,11 @@
+Exercise 3:
+1.man ls
+2.man man
+3.apropos calenda
+4.man calendar
+
+Exercise 4:
+1.find -name“* .png”
+2.find -name“* hiking *”-delete
+3.mv * .txt
+  mv * .jpg
