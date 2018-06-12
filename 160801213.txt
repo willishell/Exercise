@@ -1,0 +1,24 @@
++#Á·Ï°1
++touch message.txt
++mv message.txt ./Web
++cp ./Web/message.txt ~/
++unlink ~/message.txt && unlink ./Web/message.txt
++
++#Á·Ï°2
++mkdir ~/workbench
++touch ~/workbench/readme.txt
++echo -e "1\n2\n3">~/workbench/readme.txt
++cat ~/workbench/readme.txt
++ls ~/>~/workbench/list.txt
++wc -m ~/workbench/list.txt
++
++#Á·Ï°3
++man ls
++man man
++apropos cal
++man cal
++
++#Á·Ï°4
++find -name  \*.png
++rm  *hike.png
++mv ./*.png photo/ && mv ./*.data data/
