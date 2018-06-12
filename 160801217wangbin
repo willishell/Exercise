@@ -1,0 +1,32 @@
+exercises 1:
+1.
+mkdir new
+touch message.txt
+2. 
+mv message.txt /home/text
+3.
+cp message.txt ~/workbench
+4.
+rm /
+
+exercise2:
+1.mkdir workbench
+2.cd workbench
+touch readme.txt
+3.echo "1\r\n2\r\n3">readme.txt
+4.cat readme.txt
+5. cd workbench
+touch list.txt
+ls home/>list.txt
+6.wc -m list.txt
+
+exercise 3
+$man ls
+$mam man
+$apropos calenda
+
+exercise 4
+$find . -name "*.png"
+$fine . -name "*hiking"
+$mv *.txt data
+$mv *.jpg photo
