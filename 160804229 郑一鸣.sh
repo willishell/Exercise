@@ -6,7 +6,7 @@ cd /文档
 cp massage.txt /root
 find /root -name "massage.txt " |xargs rm {} 
 
-
+djl
 ２
 cd /root
 mkdir /workbench
