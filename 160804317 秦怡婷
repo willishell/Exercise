@@ -50,3 +50,5 @@
 ③假设数据存为txt文件 照片存为png文件 共同存放于test文件夹下
   mv test/*.txt data
   mv test/*.png photo
+  
+ 作业5
